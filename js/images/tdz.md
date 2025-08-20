@@ -2,7 +2,7 @@
 
 - 변수가 선언(variable declaration) 되기 전까지 접근할 수 없는 영역을 의미
 
-<img src="../const-tdz.png" width="500">
+<img src="const-tdz.png" width="500">
 
 (https://ui.toast.com/weekly-pick/ko_20191014)
 
