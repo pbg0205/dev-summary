@@ -1,6 +1,6 @@
 # TDZ (Temporal Dead Zone)
 
-- 변수가 선언(variable declaration) 되기 전까지 접근할 수 없는 영역을 의미 (초기화 → 선언 → 접근)
+- 변수가 선언(variable declaration) 되기 전까지 접근할 수 없는 영역을 의미 (선언 → 초기화 → 접근)
 - TDZ 에 영향을 받는 변수는 선언 이전에 참조하는 것을 금지한다. (const, let, class declaration...) 등)
 - TDZ 가 JS 에서 필요한 이유는 동적 언어의 런타임 타입 체크를 지원하기 위해서이다.
 
