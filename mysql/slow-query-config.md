@@ -9,7 +9,7 @@
 SHOW GLOBAL VARIABLES LIKE '%slow_query%';
 ```
 
-![img.png](images/slow_query_active_var.png)
+![img.png](images/slow-query-active-var.png)
 
 ### (2) 슬로우 쿼리 기준 설정 값 조회
 
@@ -19,7 +19,7 @@ SHOW GLOBAL VARIABLES LIKE '%slow_query%';
 SHOW GLOBAL VARIABLES LIKE 'long_query_time';
 ```
 
-![img.png](images/slow_query_time_var.png)
+![img.png](images/slow-query-time-var.png)
 
 ### (3) 슬로우 쿼리 활성화 및 기준 설정
 

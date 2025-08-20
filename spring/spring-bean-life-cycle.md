@@ -28,5 +28,5 @@
     2. **destroy()** 메서드 호출 (빈에서 인터페이스 DisposableBean 오버라이딩 할 경우)
     3. **destroy-method** 호출 (xml 파일 or @Bean destroyMethod 속성 사용 시)
 
-<img src="./images/bean_life_cycle.png" width="700">
+<img src="images/bean-life-cycle.png" width="700">
 
