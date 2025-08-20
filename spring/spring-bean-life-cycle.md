@@ -12,17 +12,17 @@
 ## 2. Bean 라이프 사이클 메서드 호출 흐름
 
 1. 빈 인스턴스화 및 DI
-    1. XML 파일, @Configuration 클래스, @ComponentScan 어노테이션을 통해 빈 정의를 스캔
+    1. 빈 정의를 스캔 (XML 파일, @Configuration 클래스, @ComponentScan 어노테이션)
     2. 빈 인스턴스 생성
     3. 빈 프로퍼티에 의존성 주입
 2. 스프링 인지 여부 검사
-    1. setBeanName() 메서드 호출 (빈에서 BeanNameAware 인터페이스 구현 시)
-    2. setBeanClassLoader() 메서드 호출 (빈에서 BeanClassLoaderAware 인터페이스 구현 시)
-    3. ApplicationContextAware 인터페이스 setApplicationContext() 메서드 호출 (빈에서 인터페이스 구현 시)
+    1. **setBeanName()** 메서드 호출 (빈에서 BeanNameAware 인터페이스 구현 시)
+    2. **setBeanClassLoader()** 메서드 호출 (빈에서 BeanClassLoaderAware 인터페이스 구현 시)
+    3. **setApplicationContext()** 메서드 호출 (빈에서 ApplicationContextAware 인터페이스 구현 시)
 3. 빈 생성 생명주기 콜백
-    1. @PostConstruct 어노테이션 적용 메서드 호출
-    2. afterPropertiesSet() 메서드 호출 (빈에서 InitializingBean 인터페이스 오버라이딩 할 경우)
-    3. init-method 호출 (xml 파일 or @Bean initMethod 속성 사용 시)
+    1. **@PostConstruct** 어노테이션 적용 메서드 호출
+    2. **afterPropertiesSet()** 메서드 호출 (빈에서 InitializingBean 인터페이스 오버라이딩 할 경우)
+    3. **init-method** 호출 (xml 파일 or @Bean initMethod 속성 사용 시)
 4. 빈 소멸 생명주기 콜백
     1. **@PreDestroy** 어노테이션 적용 메서드 호출
     2. **destroy()** 메서드 호출 (빈에서 인터페이스 DisposableBean 오버라이딩 할 경우)
