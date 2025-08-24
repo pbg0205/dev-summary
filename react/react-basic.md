@@ -1006,7 +1006,8 @@ console.log(obj?.emails?[0])
 > semantic tag ??
 >
 - 의미만가지고 있는 태그
-- <div>, <header>, <main>, <nav>
+- &lt;div&gt;, &lt;header&gt;, &lt;main&gt;, &lt;nav&gt;
+
 
 ### Q. 화면이 올라가자마자 포커스를 하도록 하는 방법
 
