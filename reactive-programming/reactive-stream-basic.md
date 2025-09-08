@@ -88,13 +88,13 @@
    - 예시) 트위터 게시글 읽기, 공유 리소스 변화 등 (외부에 변화에 의해서 변경되는 데이터)
    - 여러 subscriber 가 동일한 데이터한 데이터 전달
    - 실시간성이 중요한 데이터를 제공하는데 적합
-   - sample code : 
+   - sample code : https://github.com/pbg0205/reactive-study/blob/master/chapter01/src/main/kotlin/kr/cooper/chapter01/reactivestreams/SimpleHotPublisher.kt
 2. Cold Publisher
    - subscriber 가 구독을 시작할 때 데이터를 생성하고 stream 에 푸쉬하는 publisher
    - 예시) 파일 읽기, 웹 API 요청 등
    - subscriber 에 따라 독립적인 데이터 스트림 제공
    - Subscriber 한테만 중요한 정보를 제공하는데 적합
-   - sample code : 
+   - sample code : https://github.com/pbg0205/reactive-study/blob/master/chapter01/src/main/kotlin/kr/cooper/chapter01/reactivestreams/SimpleColdPublisher.kt
 
 # 4. Reactive Streams 구현 라이브러리
 
